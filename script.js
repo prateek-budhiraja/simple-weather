@@ -12,7 +12,7 @@
 })();
 
 function getWeather(long, lat) {
-	const api_key = "cb09f1b4bcc638da92043ed22a2b6f31";
+	const api_key = keys.API_KEY;
 	const weather_api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api_key}&units=metric`;
 
 	const geo_api = `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${long}&limit=5&appid=${api_key}`;
